@@ -1,0 +1,245 @@
+
+/* style body */
+
+/* https://dribbble.com/shots/21168484-Landing-page-Website-design */  /*  --> tato stranka je predloha  */
+/* https://filtergrade.com/why-you-should-showcase-your-employees-website/ */   /* --> employees podstranka inspirovana tymto */
+/* https://webdesign.tutsplus.com/10-elegant-css-pricing-tables-for-your-latest-web-project--cms-29070a */  /* --> prcing podstranka inspirovana tymto*/
+
+/*  
+Kody na pouzite farby
+
+#ccc4ff  -- > tmavsia ruzova
+
+
+*/
+
+
+/*  NAVIGATION BAR CSS */
+
+body {
+    min-height: 100vh;
+    background-color: rgb(210,203,255);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*  header code  */
+
+.header {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    font-family: "Roboto", sans-serif;
+}
+
+.h1-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.h1-nav a {
+    font-weight: bolder;
+    font-size: x-large;
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.h1-nav img {
+    width: 10%;
+    margin-right: 3%;
+}
+
+.a-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 15%;
+    width: 20%;
+}
+
+
+.a-nav a {
+    text-decoration: none;
+    font-size: x-larger;
+    margin-right: 10% ;
+    margin-left: 10% ; 
+    color: black;
+    font-size: medium;
+    font-weight: 1000;
+    font-weight: bold;
+}
+
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+}
+
+.LogInButton {
+    border: none;
+    color: black;
+    background-color: rgb(210,203,255);
+    font-weight: bold;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.LogInButton:hover {
+    cursor: pointer;
+}
+
+.SignUpButton {
+    border: 2px solid black;
+    background-color: black;
+    color: rgb(210,203,255);
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+.SignUpButton:hover {
+    cursor: pointer;
+}
+
+/* main dov code */
+
+
+.main {
+    width: 98%;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-text {
+    width: 30%;
+    text-align: left;
+    font-size: 180%;
+    font-weight: bolder;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+
+.main-background {
+    background-color: black;
+    min-height: 45vh;
+    width: 80%;
+}
+
+.pink-square {
+    min-height: 50vh;
+    width: 20%;
+    background-color: #ccc4ff;
+}
+
+
+.main-background h4 {
+    color: rgb(210,203,255) ;
+}
+
+.main-background h2 {
+    border: 2px solid;
+    background-color: rgb(210,203,255);
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 27%;
+ 
+}  
+
+.main-background-text {
+    text-align: left;
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.flex-background {
+    display: flex ;
+    flex-direction: column;
+    float: right;
+    margin-right: 3%;
+    margin-top: 1%;
+}
+
+.flex-squares {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.SignUpButtonBackground:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 800px) { 
+
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header-buttons {
+        width: 100%;
+        margin-left: 9%;
+    }
+
+    .a-nav {
+        width: 80%;
+       margin-right: 30%;
+      
+    }
+
+    .h1-nav {
+        width: 120%;
+        margin-bottom: 10%;
+        margin-left: 15%;
+    }
+
+    .h1-nav a {
+        font-size: 250%;
+        border-bottom: 2px solid black;
+        width: 73%;
+    }
+
+    .h1-nav img {
+        width: 10%;
+    }
+
+    /* main dov code */ 
+
+    .main-text {
+        font-size: 100%;
+        width: 100%;
+    }
+
+    .flex-squares {
+        flex-direction: column;
+    }
+
+    .pink-square {
+        width: 100%;
+        max-height: 50%;
+    }
+
+    .main-background {
+        width: 100%;
+    }
+
+    .flex-background {
+       margin-left: 5%;
+    }
+
+}

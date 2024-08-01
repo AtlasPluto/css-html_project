@@ -1,0 +1,297 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(210,203,255);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*  header code  */
+
+.header {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    font-family: "Roboto", sans-serif;
+}
+
+.h1-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.h1-nav a {
+    font-weight: bolder;
+    font-size: x-large;
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+.h1-nav img {
+    width: 10%;
+    margin-right: 3%;
+}
+
+.a-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 15%;
+    width: 20%;
+}
+
+
+.a-nav a {
+    text-decoration: none;
+    font-size: x-larger;
+    margin-right: 10% ;
+    margin-left: 10% ; 
+    color: black;
+    font-size: medium;
+    font-weight: 1000;
+    font-weight: bold;
+}
+
+
+.header-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+}
+
+.LogInButton {
+    border: none;
+    color: black;
+    background-color: rgb(210,203,255);
+    font-weight: bold;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.LogInButton:hover {
+    cursor: pointer;
+}
+
+.SignUpButton {
+    border: 2px solid black;
+    background-color: black;
+    color: rgb(210,203,255);
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+
+.SignUpButton:hover {
+    cursor: pointer;
+}
+
+/* main dov code */
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 98%;
+    min-height: 80vh;
+}
+
+.main h1 {
+    font-weight: bolder;
+    font-size: 350%;
+    margin-left: 1%;
+}
+
+.buttons {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons h5 {
+    font-size: 250%;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    width: 45%;
+}
+
+#monthly-text {
+    text-align: left;
+}
+
+#monthly-text:hover {
+    cursor: pointer;
+}
+
+#annualy-text {
+    text-align: right;
+    opacity: 0.3;
+}
+
+#annualy-text:hover {
+    cursor: pointer;
+}
+
+.flex-cards {
+    display: flex;
+    flex-direction: row;
+    width: 98%;
+    margin: auto;
+}
+
+.card {
+    width: 33.33%;
+    min-height: 20vh;
+}
+
+#pink-card {
+    background-color: #ccc4ff;
+}
+
+#black-card {
+    background-color: black;
+}
+
+.pricing-card {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: white;
+}
+
+.pricing-card h2 {
+    font-size: 150%;
+}
+
+.pricing-card-text {
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+#pricing-card-black {
+    border: 3px solid #ccc4ff;
+    border-radius: 8px;
+    color: #ccc4ff;
+}
+
+#pricing-card-pink {
+    border: 3px solid black;
+    border-radius: 8px;
+    color: black;
+}
+
+.flex-price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.flex-price h1 {
+    font-size: 250%;
+}
+
+.flex-price h5 {
+    align-self: flex-end;
+}
+
+.pricing-card p {
+    text-align: center;
+}
+
+.card-button {
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: bold;
+    color: white;
+}
+
+.card-button:hover {
+    cursor: pointer;
+}
+
+#pink-button {
+    border: 2px solid #ccc4ff;
+    background-color: #ccc4ff;
+    border-radius: 8px;
+}
+
+#black-button {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 8px;
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header-buttons {
+        width: 100%;
+        margin-left: 9%;
+    }
+
+    .a-nav {
+        width: 80%;
+       margin-right: 30%;
+      
+    }
+
+    .h1-nav {
+        width: 120%;
+        margin-bottom: 10%;
+        margin-left: 15%;
+    }
+
+    .h1-nav a {
+        font-size: 250%;
+        border-bottom: 2px solid black;
+        width: 73%;
+    }
+
+    .h1-nav img {
+        width: 10%;
+    }
+
+    /* main dov code */
+
+    .buttons {
+        width: 100%;
+    }
+
+    .flex-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 101%;
+    }
+    
+    .pricing-card {
+        width: 80%;
+    }
+
+}
